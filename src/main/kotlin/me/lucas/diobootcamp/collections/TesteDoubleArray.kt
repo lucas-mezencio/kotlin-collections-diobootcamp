@@ -1,5 +1,7 @@
 package me.lucas.diobootcamp.collections
 
+import me.lucas.diobootcamp.collections.utils.PrintSection
+
 fun main() {
     val salarios = DoubleArray(3)
     salarios[0] = 1100.0
@@ -8,13 +10,13 @@ fun main() {
 
     salarios.forEach { println(it) }
 
-    printSection()
+    PrintSection.section()
     salarios.forEachIndexed { index, salario ->
         salarios[index] = salario * 1.1
     }
     salarios.forEach(::println)
 
-    printSection()
+    PrintSection.section()
     val salarios2 = doubleArrayOf(1600.0, 3000.0, 500.0)
     salarios2.sort()
     salarios2.forEach { println(it) }

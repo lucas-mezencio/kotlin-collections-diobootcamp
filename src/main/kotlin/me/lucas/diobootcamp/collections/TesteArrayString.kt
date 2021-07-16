@@ -1,5 +1,7 @@
 package me.lucas.diobootcamp.collections
 
+import me.lucas.diobootcamp.collections.utils.PrintSection
+
 fun main() {
     val nomes = Array<String>(3) {""}
     nomes[0] = "Maria"
@@ -10,13 +12,13 @@ fun main() {
         println(nome)
     }
 
-    printSection()
+    PrintSection.section()
     nomes.sort()
     nomes.forEach {
         println(it)
     }
 
-    printSection()
+    PrintSection.section()
     val nomes2 = arrayOf("Maria", "Jonas", "Amanda")
     nomes2.sort()
     nomes2.forEach { println(it) }

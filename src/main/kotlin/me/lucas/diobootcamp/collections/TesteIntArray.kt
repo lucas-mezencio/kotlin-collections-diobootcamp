@@ -1,5 +1,7 @@
 package me.lucas.diobootcamp.collections
 
+import me.lucas.diobootcamp.collections.utils.PrintSection
+
 fun main() {
     val values = IntArray(5)
 
@@ -13,26 +15,24 @@ fun main() {
         println(value)
     }
 
-    printSection()
+    PrintSection.section()
     values.forEach {
         println(it)
     }
 
-    printSection()
+    PrintSection.section()
     values.forEach { valor ->
         println(valor)
     }
 
-    printSection()
+    PrintSection.section()
     for (index in values.indices) {
         println(values[index])
     }
 
-    printSection()
+    PrintSection.section()
     values.sort()
     for (value in values) {
         println(value)
     }
 }
-
-fun printSection() = println("\n===================================")
