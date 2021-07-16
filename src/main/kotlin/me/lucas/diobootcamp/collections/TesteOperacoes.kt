@@ -28,4 +28,9 @@ fun main() {
     println(salarios.any { it != 2250.0 })
     println(salarios.any { it == 1000.0 })
     println(salarios.any { it == 500.0 })
+
+
+    printSection()
+    val arrElemIguais = intArrayOf(1, 1, 1, 1)
+    println(arrElemIguais.maxOrNull())
 }
